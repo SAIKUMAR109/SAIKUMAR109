@@ -1,0 +1,58 @@
+:root {
+    --primary-color: #2ecc71;
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --dark-bg: #1a1a1a;
+    --dark-text: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Dark Mode */
+body.dark-mode {
+    --bg-color: var(--dark-bg);
+    --text-color: var(--dark-text);
+}
+
+/* Header Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo span { color: var(--primary-color); }
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 8rem 5%;
+}
+
+.github-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 25px;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+}
